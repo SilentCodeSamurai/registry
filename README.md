@@ -42,3 +42,7 @@ Simple swarm stack for running Docker Registry v2.
     ```bash
     /root/registry/deploy.sh
     ```
+
+## Clean
+
+clean.sh file is available. Running it will clean registry.
