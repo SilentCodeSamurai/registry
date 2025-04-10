@@ -1,0 +1,11 @@
+server {
+    server_name ${REGISTRY_SERVER_NAME};
+    listen 5001 ssl;
+
+    ssl_certificate /run/secrets/cert.crt;
+    ssl_certificate_key /run/secrets/cert.key;
+
+    location / {
+        proxy_pass http://ui;
+    }
+}
